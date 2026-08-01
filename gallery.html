@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Golden Ember</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">GE</span>
+      <span><strong>Golden Ember</strong><small>Fine Dining Restaurant</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-small" href="reservation.html">Book a Table</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="inner-hero gallery-hero"><div class="container inner-hero-content"><span class="eyebrow">Gallery</span><h1>A glimpse of Golden Ember</h1><p>Explore our food, dining room, chef and memorable guest experiences.</p></div></section>
+<section class="section"><div class="container"><div class="gallery-page-grid"><button class="gallery-page-item reveal" data-index="0"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 1" loading="lazy"></button><button class="gallery-page-item reveal" data-index="1"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 2" loading="lazy"></button><button class="gallery-page-item reveal" data-index="2"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 3" loading="lazy"></button><button class="gallery-page-item reveal" data-index="3"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 4" loading="lazy"></button><button class="gallery-page-item reveal" data-index="4"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 5" loading="lazy"></button><button class="gallery-page-item reveal" data-index="5"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 6" loading="lazy"></button><button class="gallery-page-item reveal" data-index="6"><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 7" loading="lazy"></button><button class="gallery-page-item reveal" data-index="7"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 8" loading="lazy"></button><button class="gallery-page-item reveal" data-index="8"><img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 9" loading="lazy"></button><button class="gallery-page-item reveal" data-index="9"><img src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 10" loading="lazy"></button><button class="gallery-page-item reveal" data-index="10"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 11" loading="lazy"></button><button class="gallery-page-item reveal" data-index="11"><img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1200&q=85" alt="Golden Ember gallery image 12" loading="lazy"></button></div></div></section>
+<div class="lightbox" id="pageLightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Close">×</button><button class="lightbox-prev">‹</button><img id="pageLightboxImg" src="" alt=""><button class="lightbox-next">›</button></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark">GE</span>
+        <span><strong>Golden Ember</strong><small>Fine Dining Restaurant</small></span>
+      </a>
+      <p>Premium dining, warm hospitality and unforgettable evenings.</p>
+    </div>
+    <div><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a></div>
+    <div><h3>Visit Us</h3><p>24 Ember Avenue, Downtown</p><a href="tel:+15550102020">+1 (555) 010-2020</a><a href="mailto:hello@goldenember.com">hello@goldenember.com</a></div>
+  </div>
+  <div class="container footer-bottom"><p>© 2026 Golden Ember Restaurant.</p></div>
+</footer>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="main.js"></script>
+
+
+<script>
+const imgs=[...document.querySelectorAll('.gallery-page-item')];
+const box=document.getElementById('pageLightbox'), out=document.getElementById('pageLightboxImg');
+let idx=0;
+function openBox(i){idx=i;out.src=imgs[idx].querySelector('img').src;box.classList.add('open');document.body.style.overflow='hidden';}
+function closeBox(){box.classList.remove('open');document.body.style.overflow='';}
+function move(d){idx=(idx+d+imgs.length)%imgs.length;openBox(idx);}
+imgs.forEach((b,i)=>b.onclick=()=>openBox(i));
+box.querySelector('.lightbox-close').onclick=closeBox;
+box.querySelector('.lightbox-prev').onclick=()=>move(-1);
+box.querySelector('.lightbox-next').onclick=()=>move(1);
+box.onclick=e=>{if(e.target===box)closeBox();}
+document.addEventListener('keydown',e=>{if(!box.classList.contains('open'))return;if(e.key==='Escape')closeBox();if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1);});
+</script>
+
+</body>
+</html>

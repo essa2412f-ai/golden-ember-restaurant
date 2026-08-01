@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu | Golden Ember</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="responsive.css" rel="stylesheet"/>
+<link href="animations.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="index.html">
+<span class="brand-mark">GE</span>
+<span><strong>Golden Ember</strong><small>Fine Dining Restaurant</small></span>
+</a>
+<button aria-label="Open menu" class="nav-toggle"><span></span><span></span><span></span></button>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+<a href="reservation.html">Reservation</a>
+<a href="contact.html">Contact</a>
+<a class="btn btn-small" href="reservation.html">Book a Table</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="inner-hero menu-hero"><div class="container inner-hero-content"><span class="eyebrow">Our Menu</span><h1>Crafted with fire and flavour</h1><p>Explore our signature starters, mains, desserts and handcrafted drinks.</p></div></section>
+<section class="section"><div class="container">
+<div class="menu-toolbar">
+<input id="menuSearch" placeholder="Search dishes..." type="search"/>
+<div class="menu-filter"><button class="active" data-filter="All">All</button><button data-filter="Starters">Starters</button><button data-filter="Mains">Mains</button><button data-filter="Desserts">Desserts</button><button data-filter="Drinks">Drinks</button></div>
+</div>
+<div class="menu-grid" id="menuGrid"><article aria-label="View details for Truffle Mushroom Soup" class="menu-card reveal" data-category="Starters" data-name="truffle mushroom soup" data-product="truffle-mushroom-soup" role="link" tabindex="0">
+<img alt="Truffle Mushroom Soup" loading="lazy" src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Starters</span><div class="menu-title-row"><h3>Truffle Mushroom Soup</h3><strong>$14</strong></div><p>Wild mushrooms, truffle cream and toasted brioche.</p></div>
+</article><article aria-label="View details for Ember Prawns" class="menu-card reveal" data-category="Starters" data-name="ember prawns" data-product="ember-prawns" role="link" tabindex="0">
+<img alt="Ember Prawns" loading="lazy" src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Starters</span><div class="menu-title-row"><h3>Ember Prawns</h3><strong>$18</strong></div><p>Charred prawns, garlic butter and citrus herbs.</p></div>
+</article><article aria-label="View details for Burrata Garden" class="menu-card reveal" data-category="Starters" data-name="burrata garden" data-product="burrata-garden" role="link" tabindex="0">
+<img alt="Burrata Garden" loading="lazy" src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Starters</span><div class="menu-title-row"><h3>Burrata Garden</h3><strong>$17</strong></div><p>Burrata, heirloom tomatoes, basil oil and sea salt.</p></div>
+</article><article aria-label="View details for Crispy Calamari" class="menu-card reveal" data-category="Starters" data-name="crispy calamari" data-product="crispy-calamari" role="link" tabindex="0">
+<img alt="Crispy Calamari" loading="lazy" src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Starters</span><div class="menu-title-row"><h3>Crispy Calamari</h3><strong>$16</strong></div><p>Golden calamari, lemon aioli and smoked paprika.</p></div>
+</article><article aria-label="View details for Ember Ribeye" class="menu-card reveal" data-category="Mains" data-name="ember ribeye" data-product="ember-ribeye" role="link" tabindex="0">
+<img alt="Ember Ribeye" loading="lazy" src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Mains</span><div class="menu-title-row"><h3>Ember Ribeye</h3><strong>$38</strong></div><p>Prime ribeye, herb butter, vegetables and pepper jus.</p></div>
+</article><article aria-label="View details for Herb Chicken" class="menu-card reveal" data-category="Mains" data-name="herb chicken" data-product="herb-chicken" role="link" tabindex="0">
+<img alt="Herb Chicken" loading="lazy" src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Mains</span><div class="menu-title-row"><h3>Herb Chicken</h3><strong>$27</strong></div><p>Free-range chicken, mashed potato and thyme jus.</p></div>
+</article><article aria-label="View details for Lamb Chops" class="menu-card reveal" data-category="Mains" data-name="lamb chops" data-product="lamb-chops" role="link" tabindex="0">
+<img alt="Lamb Chops" loading="lazy" src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Mains</span><div class="menu-title-row"><h3>Lamb Chops</h3><strong>$36</strong></div><p>Grilled lamb, rosemary glaze and roasted vegetables.</p></div>
+</article><article aria-label="View details for Seafood Linguine" class="menu-card reveal" data-category="Mains" data-name="seafood linguine" data-product="seafood-linguine" role="link" tabindex="0">
+<img alt="Seafood Linguine" loading="lazy" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Mains</span><div class="menu-title-row"><h3>Seafood Linguine</h3><strong>$29</strong></div><p>Prawns, mussels, tomato, garlic and fresh herbs.</p></div>
+</article><article aria-label="View details for Golden Ember Burger" class="menu-card reveal" data-category="Mains" data-name="golden ember burger" data-product="golden-ember-burger" role="link" tabindex="0">
+<img alt="Golden Ember Burger" loading="lazy" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Mains</span><div class="menu-title-row"><h3>Golden Ember Burger</h3><strong>$22</strong></div><p>Prime beef, cheddar, onion relish and ember sauce.</p></div>
+</article><article aria-label="View details for Wild Mushroom Pasta" class="menu-card reveal" data-category="Mains" data-name="wild mushroom pasta" data-product="wild-mushroom-pasta" role="link" tabindex="0">
+<img alt="Wild Mushroom Pasta" loading="lazy" src="https://images.unsplash.com/photo-1556761223-4c4282c73f77?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Mains</span><div class="menu-title-row"><h3>Wild Mushroom Pasta</h3><strong>$24</strong></div><p>Fresh pasta, mushroom cream and parmesan.</p></div>
+</article><article aria-label="View details for Chocolate Lava Cake" class="menu-card reveal" data-category="Desserts" data-name="chocolate lava cake" data-product="chocolate-lava-cake" role="link" tabindex="0">
+<img alt="Chocolate Lava Cake" loading="lazy" src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Desserts</span><div class="menu-title-row"><h3>Chocolate Lava Cake</h3><strong>$13</strong></div><p>Warm chocolate centre, vanilla cream and cocoa.</p></div>
+</article><article aria-label="View details for Classic Tiramisu" class="menu-card reveal" data-category="Desserts" data-name="classic tiramisu" data-product="classic-tiramisu" role="link" tabindex="0">
+<img alt="Classic Tiramisu" loading="lazy" src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Desserts</span><div class="menu-title-row"><h3>Classic Tiramisu</h3><strong>$12</strong></div><p>Espresso, mascarpone and dark cocoa.</p></div>
+</article><article aria-label="View details for Berry Cheesecake" class="menu-card reveal" data-category="Desserts" data-name="berry cheesecake" data-product="berry-cheesecake" role="link" tabindex="0">
+<img alt="Berry Cheesecake" loading="lazy" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Desserts</span><div class="menu-title-row"><h3>Berry Cheesecake</h3><strong>$12</strong></div><p>Vanilla cheesecake, berry compote and biscuit crumb.</p></div>
+</article><article aria-label="View details for Ember Citrus" class="menu-card reveal" data-category="Drinks" data-name="ember citrus" data-product="ember-citrus" role="link" tabindex="0">
+<img alt="Ember Citrus" loading="lazy" src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Drinks</span><div class="menu-title-row"><h3>Ember Citrus</h3><strong>$9</strong></div><p>Orange, grapefruit, rosemary and sparkling water.</p></div>
+</article><article aria-label="View details for Golden Passion" class="menu-card reveal" data-category="Drinks" data-name="golden passion" data-product="golden-passion" role="link" tabindex="0">
+<img alt="Golden Passion" loading="lazy" src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Drinks</span><div class="menu-title-row"><h3>Golden Passion</h3><strong>$10</strong></div><p>Passion fruit, lime, mint and tonic.</p></div>
+</article><article aria-label="View details for Berry Nocturne" class="menu-card reveal" data-category="Drinks" data-name="berry nocturne" data-product="berry-nocturne" role="link" tabindex="0">
+<img alt="Berry Nocturne" loading="lazy" src="https://images.unsplash.com/photo-1546171753-97d7676e4602?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+<div class="menu-card-body"><span>Drinks</span><div class="menu-title-row"><h3>Berry Nocturne</h3><strong>$9</strong></div><p>Mixed berries, basil and soda.</p></div>
+</article></div>
+<p class="empty-message" id="noMenuResult">No matching dishes found.</p>
+</div></section>
+<section class="section cta-section"><div class="container cta-box"><span class="eyebrow">Ready to Dine?</span><h2>Reserve your table today</h2><a class="btn" href="reservation.html">Book a Table</a></div></section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<a class="brand footer-brand" href="index.html">
+<span class="brand-mark">GE</span>
+<span><strong>Golden Ember</strong><small>Fine Dining Restaurant</small></span>
+</a>
+<p>Premium dining, warm hospitality and unforgettable evenings.</p>
+</div>
+<div><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a></div>
+<div><h3>Visit Us</h3><p>24 Ember Avenue, Downtown</p><a href="tel:+15550102020">+1 (555) 010-2020</a><a href="mailto:hello@goldenember.com">hello@goldenember.com</a></div>
+</div>
+<div class="container footer-bottom"><p>© 2026 Golden Ember Restaurant.</p></div>
+</footer>
+<button aria-label="Back to top" class="back-to-top">↑</button>
+<script src="main.js"></script>
+
+<script src="menu.js"></script><script src="product-cards.js"></script></body>
+</html>

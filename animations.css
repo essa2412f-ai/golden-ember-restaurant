@@ -1,0 +1,10 @@
+.reveal,.reveal-left,.reveal-right{opacity:0;transition:opacity .8s ease,transform .8s ease}
+.reveal{transform:translateY(32px)}
+.reveal-left{transform:translateX(-34px)}
+.reveal-right{transform:translateX(34px)}
+.reveal.visible,.reveal-left.visible,.reveal-right.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal,.reveal-left,.reveal-right{opacity:1;transform:none}
+}

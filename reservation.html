@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservation | Golden Ember</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">GE</span>
+      <span><strong>Golden Ember</strong><small>Fine Dining Restaurant</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-small" href="reservation.html">Book a Table</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="inner-hero reservation-hero"><div class="container inner-hero-content"><span class="eyebrow">Reservation</span><h1>Reserve your table</h1><p>Plan your visit and let our team prepare an exceptional dining experience.</p></div></section>
+<section class="section"><div class="container booking-grid">
+<div class="booking-copy"><span class="eyebrow">Before You Book</span><h2>Dining information</h2><p>Online requests are reviewed by our team and confirmed using the contact details provided.</p>
+<div class="info-stack"><div><strong>Opening Hours</strong><span>Mon–Thu: 12 PM–11 PM</span><span>Fri–Sat: 12 PM–12 AM</span><span>Sunday: 12 PM–10 PM</span></div>
+<div><strong>Contact</strong><a href="tel:+15550102020">+1 (555) 010-2020</a><a href="mailto:hello@goldenember.com">hello@goldenember.com</a></div></div></div>
+<form class="reservation-form" id="reservationPageForm" novalidate>
+<div class="form-grid">
+<label><span>Full Name</span><input name="name" required placeholder="Your name"></label>
+<label><span>Email</span><input type="email" name="email" required placeholder="you@example.com"></label>
+<label><span>Phone</span><input name="phone" required placeholder="+1 555 010 2020"></label>
+<label><span>Guests</span><select name="guests" required><option value="">Select</option><option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5 Guests</option><option>6+ Guests</option></select></label>
+<label><span>Date</span><input type="date" name="date" required></label>
+<label><span>Time</span><select name="time" required><option value="">Select</option><option>12:00 PM</option><option>1:30 PM</option><option>3:00 PM</option><option>6:00 PM</option><option>7:30 PM</option><option>9:00 PM</option></select></label>
+</div>
+<label><span>Special Request</span><textarea name="message" rows="5" placeholder="Birthday, dietary requirements or seating request"></textarea></label>
+<button class="btn" type="submit">Send Reservation Request</button><p id="reservationPageMessage" class="form-message"></p>
+</form></div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark">GE</span>
+        <span><strong>Golden Ember</strong><small>Fine Dining Restaurant</small></span>
+      </a>
+      <p>Premium dining, warm hospitality and unforgettable evenings.</p>
+    </div>
+    <div><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a></div>
+    <div><h3>Visit Us</h3><p>24 Ember Avenue, Downtown</p><a href="tel:+15550102020">+1 (555) 010-2020</a><a href="mailto:hello@goldenember.com">hello@goldenember.com</a></div>
+  </div>
+  <div class="container footer-bottom"><p>© 2026 Golden Ember Restaurant.</p></div>
+</footer>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="main.js"></script>
+
+
+<script>
+const rf=document.getElementById('reservationPageForm'), rm=document.getElementById('reservationPageMessage');
+const date=rf.elements.date;
+const now=new Date();date.min=new Date(now.getTime()-now.getTimezoneOffset()*60000).toISOString().split('T')[0];
+rf.onsubmit=e=>{e.preventDefault();const req=[...rf.querySelectorAll('[required]')];const bad=req.find(x=>!x.value.trim());
+if(bad){rm.className='form-message error';rm.textContent='Please complete all required fields.';bad.focus();return;}
+if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(rf.elements.email.value)){rm.className='form-message error';rm.textContent='Please enter a valid email address.';return;}
+rm.className='form-message success';rm.textContent='Reservation request submitted successfully. Our team will contact you shortly.';rf.reset();};
+</script>
+
+</body>
+</html>
